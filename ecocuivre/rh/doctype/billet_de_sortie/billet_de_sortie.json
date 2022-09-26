@@ -8,7 +8,10 @@
  "field_order": [
   "employ\u00e9",
   "date_et_heure",
-  "amended_from"
+  "amended_from",
+  "nom",
+  "pr\u00e9nom",
+  "empreinte"
  ],
  "fields": [
   {
@@ -35,12 +38,30 @@
    "print_hide": 1,
    "read_only": 1,
    "reqd": 1
+  },
+  {
+   "fetch_from": "employ\u00e9.last_name",
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fetch_from": "employ\u00e9.first_name",
+   "fieldname": "pr\u00e9nom",
+   "fieldtype": "Data",
+   "label": " Pr\u00e9nom "
+  },
+  {
+   "fetch_from": "employ\u00e9.employee",
+   "fieldname": "empreinte",
+   "fieldtype": "Image",
+   "label": "Empreinte"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-09-20 14:09:42.670538",
+ "modified": "2022-09-26 13:16:19.021661",
  "modified_by": "Administrator",
  "module": "RH",
  "name": "Billet de sortie",
