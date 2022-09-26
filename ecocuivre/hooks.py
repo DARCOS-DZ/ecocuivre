@@ -9,7 +9,7 @@ app_license = "MIT"
 
 # Includes in <head>
 # ------------------
-
+fixtures = ["Print Format"]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/ecocuivre/css/ecocuivre.css"
 # app_include_js = "/assets/ecocuivre/js/ecocuivre.js"
