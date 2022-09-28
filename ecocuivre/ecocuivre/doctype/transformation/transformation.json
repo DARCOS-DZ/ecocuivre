@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-27 10:27:32.394667",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "amended_from",
+  "date",
+  "raw_materials_section",
+  "transformation_items",
+  "finished_items_section",
+  "finished_item",
+  "column_break_8",
+  "qty",
+  "warehouse_details_section",
+  "target_warehouse",
+  "stock_entries",
+  "transfer_for_manufacture_entry",
+  "manufacture_entry"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transformation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "transformation_items",
+   "fieldtype": "Table",
+   "label": "Transformation Items",
+   "options": "Transformation Item"
+  },
+  {
+   "fieldname": "finished_item",
+   "fieldtype": "Link",
+   "label": "Finished Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "transfer_for_manufacture_entry",
+   "fieldtype": "Link",
+   "label": "Transfer for Manufacture Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "manufacture_entry",
+   "fieldtype": "Link",
+   "label": "Manufacture Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "raw_materials_section",
+   "fieldtype": "Section Break",
+   "label": "Raw materials"
+  },
+  {
+   "fieldname": "finished_items_section",
+   "fieldtype": "Section Break",
+   "label": "Finished Items"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouse_details_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse details"
+  },
+  {
+   "fieldname": "stock_entries",
+   "fieldtype": "Section Break",
+   "label": "Stock entries"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-27 16:55:02.426434",
+ "modified_by": "Administrator",
+ "module": "Ecocuivre",
+ "name": "Transformation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
